@@ -142,6 +142,24 @@
             ]
         ]
 
+        const CalculatorContext = React.createContext()
+
+        function CalculatorProvider({ children }) {
+            const [history, setHistory] = React.useState([])
+
+            function updateHistory(operation, parsedResult) {
+                setHistory((prev) => [...prev, `${operation}=${parsedResult}`])
+            }
+
+            return (
+                <CalculatorContext.Provider
+                    value={{ history, updateHistory }}
+                >
+                    {children}
+                </CalculatorContext.Provider>
+            )
+        }
+
         function CalculatorDisplay({ operation, result }) {
             return (
                 <div className={`
@@ -168,6 +186,7 @@
         function Calculator() {
             const [operation, setOperation] = React.useState('')
             const [result, setResult] = React.useState('')
+            const { updateHistory } = React.useContext(CalculatorContext)
 
             function handleInputClick(input) {
 
@@ -185,9 +204,10 @@
 
 
                 if (input === "=") {
-                    const operationResult = eval(operation.replace(/,/g, '.'))
+                    const operationResult = eval(operation.replace(/,/g, '.').replace(/X/g, '*'))
                     const parsedResult = operationResult.toString()?.replace(/\./g, ',')
                     setResult(parsedResult)
+                    updateHistory(operation, parsedResult)
                     return;
                 }
 
@@ -242,6 +262,7 @@
         }
 
         function OperationHistory() {
+            const { history } = React.useContext(CalculatorContext)
             return (
                 <Card className="py-10 px-8 w-full">
                     <Text
@@ -252,17 +273,18 @@
                         Histórico de Operações
                     </Text>
 
-                    <ul className="flex flex-col gap-3">
-                        <Text as="li">
-                            1 + 1 = 2
-                        </Text>
-                        <Text as="li">
-                            2 + 3 + 1 = 6
-                        </Text>
-                        <Text>
-                            2 + 3 = 5
-                        </Text>
-                    </ul>
+                    {history.length > 0 ? (
+                        <ul className="flex flex-col gap-3">
+                            {history.map((value, index) =>
+                                <Text key={`item-${index}`}>
+                                    {value}
+                                </Text>
+                            )}
+                        </ul>
+                    ) : (
+                        <Text as="p" variant="muted">Nenhuma operação recente.</Text>
+                    )
+                    }
                 </Card>
             )
         }
@@ -275,8 +297,10 @@
                     items-center sm:items-stretch
                     gap-2
                     `}>
-                    <Calculator />
-                    <OperationHistory />
+                    <CalculatorProvider>
+                        <Calculator />
+                        <OperationHistory />
+                    </CalculatorProvider>
                 </main>
             )
         }
