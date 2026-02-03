@@ -1,58 +1,40 @@
-# 🧠 Frontend Engineering Foundations
+# 🚀 Frontend Engineering Foundations
 
-Repositório dedicado ao desenvolvimento dos **fundamentos de engenharia Frontend**, com foco em **aplicações web modernas**, **engenharia de software** e **preparação para entrevistas técnicas** em empresas de tecnologia como **Uber** e **Meta**.
+Repositório dedicado ao desenvolvimento dos **fundamentos essenciais de engenharia frontend**, com foco em **React, TypeScript, Data Structures & Algorithms (DSA)** e **arquitetura de aplicações web modernas**, alinhado a processos seletivos de **Big Tech (ex: Airbnb, Uber, Meta)**.
 
-Aqui concentro estudos práticos de **JavaScript, TypeScript, React e Next.js**, além de **algoritmos, estruturas de dados e fundamentos essenciais de Frontend Engineering**, priorizando **qualidade de código, performance, acessibilidade e escalabilidade**.
+Este repositório documenta minha evolução prática em:
+- construção de interfaces modernas e escaláveis com React
+- resolução de problemas algorítmicos
+- estruturas de dados clássicas
+- análise de complexidade
+- fundamentos de engenharia frontend e performance web
+
+Todo o conteúdo é organizado por **conceito**, **linguagem** e **padrões recorrentes de entrevistas técnicas**.
 
 ---
 
 ## 🎯 Objetivos
 
-* Desenvolver uma base sólida em **engenharia Frontend**
-* Dominar **JavaScript, TypeScript e React**
-* Entender **engenharia além de frameworks**
-* Praticar **algoritmos e estruturas de dados** cobrados em entrevistas
-* Escrever código **limpo, performático e acessível**
-* Evoluir a capacidade de **análise e resolução de problemas**
-* Me preparar para **processos seletivos de Frontend Engineer (Big Tech)**
+- Construir base sólida em **React, TypeScript e engenharia frontend**
+- Dominar **estruturas de dados e algoritmos**
+- Desenvolver **raciocínio algorítmico e pensamento de engenharia**
+- Praticar soluções eficientes com análise de tempo e espaço
+- Comparar abordagens entre diferentes linguagens
+- Criar base para **aplicações web escaláveis, performáticas e acessíveis**
+- Me preparar para entrevistas técnicas de empresas de grande escala
 
 ---
 
-## 🧩 Stack Principal (Core)
+## 🧩 Linguagens Utilizadas
 
-### 🌐 Frontend
+- ⚛️ **React** – biblioteca principal para construção de interfaces
+- 📘 **TypeScript** – type-safe JavaScript e escalabilidade
+- 🟨 **JavaScript** – linguagem principal para DSA e frontend
+- 🐍 **Python** – problem solving e algoritmos
+- 🟢 **Node.js** – fundamentos de backend
+- 🐹 **Go** – concorrência e sistemas 
 
-* HTML5 (semântico e acessível)
-* CSS3 (Flexbox, Grid, responsividade)
-* JavaScript (ES6+)
-* TypeScript
-* React.js
-* Next.js
-
----
-
-## 🧠 Fundamentos de Engenharia
-
-* Algoritmos
-* Estruturas de Dados
-* Análise de Complexidade (Big-O)
-* Raciocínio lógico aplicado a Frontend
-
-**Linguagens usadas para algoritmos:**
-
-* JavaScript (entrevistas Frontend)
-* Python (clareza mental e organização)
-
----
-
-## 🧰 Stack de Suporte
-
-Não é foco backend, apenas o necessário para não ser limitado:
-
-* Node.js (básico)
-* APIs REST
-* HTTP / JSON
-* Noções de autenticação
+> O foco está nos **conceitos**, não apenas na linguagem.
 
 ---
 
@@ -60,82 +42,139 @@ Não é foco backend, apenas o necessário para não ser limitado:
 
 ```
 frontend-engineering-foundations/
-├── javascript/
-│   ├── fundamentals/
-│   ├── algorithms/
-│   └── data-structures/
+├── README.md
 │
-├── typescript/
-│   ├── fundamentals/
-│   └── advanced/
-│
-├── react/
-│   ├── fundamentals/
-│   ├── hooks/
-│   ├── patterns/
-│   └── performance/
-│
-├── nextjs/
-│   ├── routing/
-│   ├── data-fetching/
-│   └── optimization/
-│
-├── algorithms/
+├── data-structures-algorithms/
 │   ├── arrays-strings/
-│   ├── hash-tables/
-│   ├── stacks-queues/
+│   ├── hash-table/
+│   ├── stack-queue/
 │   ├── linked-list/
-│   ├── trees/
-│   └── graphs/
+│   ├── tree/
+│   ├── heap/
+│   ├── graph/
+│   ├── dynamic-programming/
+│   └── patterns/
+│       ├── two-pointers/
+│       ├── sliding-window/
+│       ├── bfs-dfs/
+│       └── binary-search/
 │
-└── README.md
+├── problem-solving/
+│   ├── leetcode/
+│   ├── frontend-specific/
+│   │   ├── debounce-throttle/
+│   │   ├── deep-clone/
+│   │   └── event-emitter/
+│   ├── patterns-practice/
+│   └── interview-mocks/
+│
+├── frontend-foundations/
+│   ├── react/
+│   │   ├── hooks/
+│   │   ├── patterns/
+│   │   ├── performance/
+│   │   └── state-management/
+│   ├── typescript/
+│   │   ├── fundamentals/
+│   │   └── advanced/
+│   ├── web-fundamentals/
+│   │   ├── html-css/
+│   │   ├── browser-apis/
+│   │   └── accessibility/
+│   ├── performance/
+│   │   ├── code-splitting/
+│   │   ├── lazy-loading/
+│   │   └── optimization/
+│   ├── tooling/
+│   │   ├── webpack/
+│   │   └── npm/
+│   └── projects/
+│       ├── payment-flow/
+│       └── delivery-dashboard/
+│
+├── languages/
+│   ├── javascript/
+│   │   ├── dsa/
+│   │   ├── fundamentals/
+│   │   └── notes/
+│   ├── typescript/
+│   │   ├── patterns/
+│   │   └── notes/
+│   ├── python/
+│   │   ├── dsa/
+│   │   └── algorithms/
+│   ├── nodejs/
+│   │   ├── basics/
+│   │   └── apis/
+│   └── go/
+│       ├── fundamentals/
+│       └── concurrency/
+│
+└── notes/
+    ├── complexity-analysis.md
+    ├── react-best-practices.md
+    ├── typescript-guidelines.md
+    ├── interview-tips.md
+    ├── airbnb-requirements.md
+    └── uber-requirements.md
 ```
----
-## 🧠 Conteúdos Prioritários (Uber / Meta)
-
-### Algoritmos & Estruturas
-
-- Arrays & Strings  
-- Hash Tables  
-- Stacks & Queues  
-- Linked List  
-- Trees (básico)  
-- BFS / DFS  
-- Big-O  
-
-### Frontend Engineering
-
-- Arquitetura de componentes  
-- Componentização e reuso  
-- Gerenciamento de estado  
-- Performance (memo, lazy, code splitting)  
-- Acessibilidade (a11y)  
-- Boas práticas  
-- Leitura e entendimento de código complexo  
 
 ---
 
-## 🚀 Estratégia de Estudo
+## 🎯 Foco em Entrevistas (Airbnb & Uber)
 
-- **40%** Frontend (React / Next.js)  
-- **30%** Algoritmos & Estruturas  
-- **15%** TypeScript  
-- **10%** Inglês técnico  
-- **5%** Backend básico  
+### Airbnb - Frontend Engineer, Payments
+- React, TypeScript, JavaScript
+- Modern JS libraries & tooling
+- npm, webpack
+- Component architecture
+- Payment flows
+
+### Uber - Software Engineer II, Frontend
+- React, JavaScript, HTML, CSS
+- Web APIs & Modern architecture
+- Algorithms & Data Structures
+- Backend systems (Go, Python, Node.js)
+- Delivery systems & Real-time UIs
 
 ---
 
-## 📌 Princípios do Repositório
+## 📚 Roadmap de Estudos
 
-- Código prioriza **clareza e legibilidade**  
-- Exercícios evoluem de **básico → intermediário**  
-- Foco em **engenharia**, não apenas em framework  
-- Conteúdo pensado para **entrevistas técnicas reais**  
+### Fase 1: Frontend Core (Meses 1-3)
+- React fundamentals & hooks
+- TypeScript basics
+- HTML, CSS, JavaScript moderno
+- Tooling: webpack, npm
+
+### Fase 2: Algoritmos (Meses 4-6)
+- Arrays, Strings, Hash Tables
+- Stacks, Queues, Linked Lists
+- Trees, Graphs
+- 150+ problemas LeetCode
+
+### Fase 3: Advanced Frontend (Meses 7-9)
+- React patterns avançados
+- Performance & optimization
+- System design frontend
+- Projetos: Payment flow, Delivery dashboard
+
+### Fase 4: Backend Foundations (Meses 10-12)
+- Node.js, Python, Go
+- REST APIs
+- Concurrency basics
+- Full-stack understanding
+
+### Fase 5: Interview Ready (Mês 12+)
+- 300+ problemas LeetCode
+- Mock interviews
+- Portfolio polido
+- Aplicar para Airbnb & Uber
 
 ---
 
-## 💡 Motivação
+## 🤝 Connect
 
-Dominar Frontend hoje exige mais do que saber React.  
-Este repositório existe para construir **base sólida**, **pensamento algorítmico** e **mentalidade de engenheiro**, essenciais para evoluir rumo a **Big Techs**.
-
+- **LinkedIn:** [linkedin.com/in/rbll0](https://linkedin.com/in/rbll0)
+- **Email:** gurabelo09@gmail.com
+- **GitHub:** [@rbll0](https://github.com/rbll0)
