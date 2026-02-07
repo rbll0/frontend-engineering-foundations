@@ -1,0 +1,26 @@
+pre-commit:
+  commands:
+    check:
+      root: 'courses/rocketseat/prompt-manager/'
+      run: pnpm format {staged_files}
+      glob: '*.{js,jsx,.mjs,ts,tsx,css,json,md}'
+      stage_fixed: true
+    validate:
+      root: 'courses/rocketseat/prompt-manager/'
+      glob: '*.{ts,tsx}'
+      run: pnpm typecheck
+
+pre-push:
+  commands:
+    validate:
+      root: 'courses/rocketseat/prompt-manager/'
+      glob: '*.{ts,tsx}'
+      run: pnpm typecheck
+    lint:
+      root: 'courses/rocketseat/prompt-manager/'
+      glob: '*.{ts,tsx}'
+      run: pnpm lint
+    test:
+      root: 'courses/rocketseat/prompt-manager/'
+      glob: '*.{ts,tsx}'
+      run: pnpm test:coverage
